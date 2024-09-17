@@ -3,6 +3,10 @@
 <head>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        * {
+                margin: 0;
+                box-sizing: border-box;
+            }
 
 
         .MacBook {
@@ -12,72 +16,59 @@
             background: #FFFFFF;
         }
 
-        .Rectangle {
+        .container{
 
-            position: absolute;
-            width: 1436px;
-            height: 840px;
-            left: 146px;
-            top: 138px;
-
+            width: 80%vw;
+            height: auto;  
             background: #FFFFFF;
             box-shadow: 2px 4px 16px 8px rgba(0, 0, 0, 0.25);
             border-radius: 400px 0px;
+           
+           display: flex;
         }
 
-        .Rectangle3 {
-
-            position: absolute;
+        
+        .child{
             width: 487px;
             height: 494px;
-            left: 894px;
-            top: 311px;
-
+            background: url(img/mohammad-sajjad.png);
+            box-shadow: 2px 4px 16px 8px rgba(136, 136, 136, 0.25);
+            border-radius: 200px 0px;
+            margin-right: 60px;
+            margin-left: 201px;
+            margin-top: 173px;
+          margin-bottom: 173px;
+        }
+        .childs{
+            width: 487px;
+            height: 494px;
             background: #FFFFFF;
             box-shadow: inset 2px 4px 16px 8px rgba(136, 136, 136, 0.25);
             border-radius: 0px 200px;
-        }
-
-        .box {
-
-            position: absolute;
-            width: 487px;
-            height: 494px;
-            left: 347px;
-            top: 311px;
-            background: url(img/mohammad-sajjad.png);
-           
-            border-radius: 200px 0px;
-        }
-
-        .box2 {
-            position: absolute;
-            width: 376px;
-            height: 164px;
-            left: 950px;
-            top: 453px;
-
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 700;
             font-size: 70px;
             line-height: 82px;
             text-align: center;
-
             color: #000000;
+            margin-left: 60px;
+            margin-right: 201px;
+          margin-top: 173px;
+          margin-bottom: 173px;
         }
     </style>
 </head>
 
 <body>
     <div class="MacBook"></div>
-    <div class="Rectangle"></div>
-    <div class="Rectangle3"></div>
-    <div class="box">
+    <div class="container">
+    <div class="child">
+    
         <img class="img" src="img/mohammad-sajjad.png" />
-
     </div>
-    <div class="box2">mohammad sajjad</div>
+    <div class="childs">mohammad sajjad </div>
+</div>
 </body>
 
 </html>
